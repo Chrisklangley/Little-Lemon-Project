@@ -1,0 +1,36 @@
+header {
+  width: 100vw;
+  height: 7vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 8vh;
+  /* width: 65vw; */
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  list-style-type: none;
+  margin-right: 10px;
+  padding: 0;
+  /* border: red solid 2px; */
+  width: 700px;
+}
+li {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+nav img {
+  height: 50px;
+
+  margin-right: 20px;
+  margin-top: 3px;
+}
