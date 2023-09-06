@@ -5,8 +5,10 @@ import MenuItems from "./MenuItems";
 import Testimonials from "./Testimonials";
 import About from "./About";
 import Footer from "./Footer";
+import { useNavigate } from "react-router-dom";
 import { dishes, testimonials } from "../RestaurantData";
 function Homepage() {
+  const navigate = useNavigate()
   const menuResults = dishes.map((dish, i) => {
     return <MenuItems key={i} dish={dish} />;
   });
@@ -25,7 +27,7 @@ function Homepage() {
               We are a family owned Mediterranean restaurant, focused on
               traditional recipes served with a modern twist{" "}
             </p>
-            <button>Reserve a Table</button>
+            <button onClick={()=>}>Reserve a Table</button>
           </div>
         </div>
         <img

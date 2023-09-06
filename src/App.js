@@ -4,6 +4,7 @@ import Navigation from "./Components/Navigation";
 import { Route, Routes } from "react-router-dom";
 import Footer from "./Components/Footer";
 import Homepage from "./Components/Homepage";
+import BookingForm from "./Components/BookingForm";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Navigation />
       <Routes>
         <Route path="/" element={<Homepage />} />
+        <Route path="/Booking" element={<BookingForm />} />
       </Routes>
     </>
   );
