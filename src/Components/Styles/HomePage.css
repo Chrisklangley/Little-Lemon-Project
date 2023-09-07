@@ -49,6 +49,9 @@ h2 {
   border: none;
   background-color: #f4ce14;
 }
+.Hero-content button:hover {
+  background-color: #bc9f11;
+}
 .Specials {
   /* border: solid red 2px; */
   margin-top: 40px;

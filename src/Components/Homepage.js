@@ -8,7 +8,7 @@ import Footer from "./Footer";
 import { useNavigate } from "react-router-dom";
 import { dishes, testimonials } from "../RestaurantData";
 function Homepage() {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   const menuResults = dishes.map((dish, i) => {
     return <MenuItems key={i} dish={dish} />;
   });
@@ -27,7 +27,9 @@ function Homepage() {
               We are a family owned Mediterranean restaurant, focused on
               traditional recipes served with a modern twist{" "}
             </p>
-            <button onClick={()=>}>Reserve a Table</button>
+            <button onClick={() => navigate("/Booking")}>
+              Reserve a Table
+            </button>
           </div>
         </div>
         <img
